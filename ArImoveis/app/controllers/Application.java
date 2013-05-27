@@ -11,7 +11,7 @@ public class Application extends Controller {
   
 	static Form<Task> taskForm = Form.form(Task.class);
 	
-	private int test = 1;
+	private int test = 2;
 
 	
     public static Result index() {
