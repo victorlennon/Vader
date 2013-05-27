@@ -14,13 +14,13 @@ public class Task extends play.db.ebean.Model {
 	public Long id;
 	@Required
 	public String label;
+	
 
-	public static Finder<Long,Task> find = new Finder(
-			Long.class, Task.class
-			);
+	public static Finder<Long,Task> find = new Finder(Long.class, Task.class);
 	
 	public static List<Task> all() {
 		return find.all();
+		//return new ArrayList<Task>();
 	}
 
 	public static void create(Task task) {

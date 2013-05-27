@@ -19,9 +19,7 @@ public class Application extends Controller {
     }
     
     public static Result tasks() {
-    	return ok(
-    			views.html.index.render(Task.all(), taskForm)
-    			);
+    	return ok(views.html.index.render(Task.all(), taskForm));
     }
 
     public static Result newTask() {
