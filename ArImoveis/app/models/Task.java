@@ -20,6 +20,7 @@ public class Task extends play.db.ebean.Model {
 	
 	public static List<Task> all() {
 		return find.all();
+		
 		//return new ArrayList<Task>();
 	}
 
