@@ -11,7 +11,7 @@ public class Application extends Controller {
   
 	static Form<Task> taskForm = Form.form(Task.class);
 	
-	private int test = 1;
+	private int test = 2;
 
 	
     public static Result index() {
@@ -19,9 +19,7 @@ public class Application extends Controller {
     }
     
     public static Result tasks() {
-    	return ok(
-    			views.html.index.render(Task.all(), taskForm)
-    			);
+    	return ok(views.html.index.render(Task.all(), taskForm));
     }
 
     public static Result newTask() {
